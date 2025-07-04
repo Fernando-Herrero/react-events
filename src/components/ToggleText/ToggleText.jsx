@@ -20,7 +20,7 @@ export const ToggleText = () => {
 
 				timeOutId = setTimeout(() => {
 					typeText(index + 1);
-				}, 200);
+				}, 150);
 			}
 		};
 
@@ -32,12 +32,11 @@ export const ToggleText = () => {
 		}
 
 		return () => clearTimeout(timeOutId);
-        
 	}, [text]);
 
 	return (
 		<div className="toggle-text">
-			<button onClick={handleText}>{text ? "Hide text" : "Show text"}</button>
+			<button onClick={handleText}>{text ? "Hide the GOAT" : "Show the GOAT"}</button>
 			{text && (
 				<>
 					<h1>Cristiano Ronaldo is the GOAT</h1>
