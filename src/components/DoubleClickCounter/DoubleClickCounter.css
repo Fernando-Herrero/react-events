@@ -1,0 +1,30 @@
+.double-click-counter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	gap: 16px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.double-click-counter span {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+.double-click-counter button {
+	padding: 12px 24px;
+	font-size: 1.2rem;
+	background-color: #3498db;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.double-click-counter button:hover {
+	background-color: #2980b9;
+}
