@@ -1,0 +1,13 @@
+.box-color {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	transition: background-color 0.3s ease;
+	border: 2px solid black;
+	margin: 20px auto 0 auto;
+	cursor: crosshair;
+}
+
+.box-color.hovered {
+	background-color: purple;
+}
