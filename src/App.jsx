@@ -1,6 +1,7 @@
 import "./App.css";
 import { CountClicks } from "./components/CountClicks/CountClicks";
 import { DoubleClickCounter } from "./components/DoubleClickCounter/DoubleClickCounter";
+import { Form } from "./components/Form/Form";
 import { HoverBox } from "./components/HoverBox/HoverBox";
 import { InputFocus } from "./components/InputFocus/InputFocus";
 import { KeyCounter } from "./components/KeyCounter/KeyCountr";
@@ -19,6 +20,7 @@ function App() {
 			<HoverBox />
 			<KeyCounter />
 			<InputFocus />
+			<Form />
 		</>
 	);
 }
