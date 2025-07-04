@@ -1,0 +1,35 @@
+.container-mirror {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-mirror label {
+	font-size: 1rem;
+	margin-bottom: 10px;
+	color: #444;
+}
+
+.container-mirror input[type="text"] {
+	padding: 10px 15px;
+	font-size: 1rem;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+	transition: border-color 0.3s;
+	width: 280px;
+	max-width: 90%;
+	margin-bottom: 20px;
+}
+
+.container-mirror input[type="text"]:focus {
+	border-color: #0074e4;
+}
+
+.container-mirror h1 {
+	font-size: 1.8rem;
+	color: #0074e4;
+	text-align: center;
+}
