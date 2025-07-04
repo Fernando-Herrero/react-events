@@ -1,0 +1,20 @@
+.focus-input {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	margin: 20px auto 0 auto;
+	font-family: Arial, sans-serif;
+}
+
+.focus-input input {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+	transition: border 0.3s ease;
+}
+
+.focus-input input.border-focus {
+	border: 3px solid #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
