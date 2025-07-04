@@ -1,9 +1,10 @@
 import "./App.css";
+import { CountClicks } from "./components/CountClicks/CountClicks";
 
 function App() {
 	return (
 		<>
-			<h1>My new Project</h1>
+			<CountClicks /> 
 		</>
 	);
 }

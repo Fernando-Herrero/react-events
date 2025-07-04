@@ -1,0 +1,32 @@
+.container-counter {
+	text-align: center;
+	margin-top: 50px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-counter h3 {
+	font-size: 1.8rem;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.container-counter h3 span {
+	color: #0074e4;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.container-counter button {
+	padding: 10px 20px;
+	font-size: 1rem;
+	background-color: #0074e4;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.container-counter button:hover {
+	background-color: #005bb5;
+}
