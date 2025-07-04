@@ -21,7 +21,15 @@ export const KeyCounter = () => {
 			<label htmlFor="keys">Write here whatever you want and ill show you:</label>
 			<input type="text" id="keys" value={text} onChange={handleText} onKeyDown={handlePressedKeys} />
 
-			<h1>{text ? text + ", Pressed keys:" + pressedKeys : ""}</h1>
+			<h1>
+				{text ? (
+					<>
+						{text} <br /> Pressed keys: {pressedKeys}
+					</>
+				) : (
+					""
+				)}
+			</h1>
 		</div>
 	);
 };
