@@ -11,6 +11,7 @@ import { MirrorInput } from "./components/MirrorInput/MirrorInput";
 import { ScrollLogger } from "./components/ScrollLogger/ScrollLogger";
 import { StateCheckbox } from "./components/StateCheckbox/StateCheckbox";
 import { ToggleText } from "./components/ToggleText/ToggleText";
+import { Select } from "./components/Select/Select";
 
 function App() {
 	return (
@@ -26,7 +27,8 @@ function App() {
 			<Form />
 			<ErrorImage />
 			<ScrollLogger />
-      <StateCheckbox />
+			<StateCheckbox />
+			<Select />
 		</>
 	);
 }
