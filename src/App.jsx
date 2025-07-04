@@ -8,6 +8,7 @@ import { InputFocus } from "./components/InputFocus/InputFocus";
 import { KeyCounter } from "./components/KeyCounter/KeyCountr";
 import { LoginForm } from "./components/LoginForm/LoginForm";
 import { MirrorInput } from "./components/MirrorInput/MirrorInput";
+import { ScrollLogger } from "./components/ScrollLogger/ScrollLogger";
 import { ToggleText } from "./components/ToggleText/ToggleText";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 			<InputFocus />
 			<Form />
 			<ErrorImage />
+			<ScrollLogger />
 		</>
 	);
 }
