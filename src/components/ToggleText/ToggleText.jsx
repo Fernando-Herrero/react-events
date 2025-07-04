@@ -32,6 +32,7 @@ export const ToggleText = () => {
 		}
 
 		return () => clearTimeout(timeOutId);
+        
 	}, [text]);
 
 	return (
