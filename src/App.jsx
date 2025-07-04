@@ -9,6 +9,7 @@ import { KeyCounter } from "./components/KeyCounter/KeyCountr";
 import { LoginForm } from "./components/LoginForm/LoginForm";
 import { MirrorInput } from "./components/MirrorInput/MirrorInput";
 import { ScrollLogger } from "./components/ScrollLogger/ScrollLogger";
+import { StateCheckbox } from "./components/StateCheckbox/StateCheckbox";
 import { ToggleText } from "./components/ToggleText/ToggleText";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 			<Form />
 			<ErrorImage />
 			<ScrollLogger />
+      <StateCheckbox />
 		</>
 	);
 }

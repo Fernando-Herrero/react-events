@@ -32,7 +32,7 @@ export const Form = () => {
 	};
 
 	return (
-		<form action="form" onSubmit={handleSubmit}>
+		<form action="form" onSubmit={handleSubmit} className="form-two">
 			<label htmlFor="username">Username:</label>
 			<input type="text" id="username" name="username" value={dataForm.username} onChange={handleText} />
 

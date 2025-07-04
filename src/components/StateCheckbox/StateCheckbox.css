@@ -1,0 +1,23 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 10px;
+	font-family: Arial, sans-serif;
+	margin: 15px 0;
+}
+
+.checkbox label {
+	font-weight: bold;
+}
+
+.checkbox input[type="text"] {
+	padding: 5px 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.checkbox span {
+	font-style: italic;
+	color: #555;
+}
