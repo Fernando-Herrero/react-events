@@ -13,6 +13,7 @@ import { StateCheckbox } from "./components/StateCheckbox/StateCheckbox";
 import { ToggleText } from "./components/ToggleText/ToggleText";
 import { Select } from "./components/Select/Select";
 import { EditableText } from "./components/EditableText/EditableText";
+import { NamesList } from "./components/NamesList/NamesList";
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 			<StateCheckbox />
 			<Select />
 			<EditableText />
+			<NamesList />
 		</>
 	);
 }
