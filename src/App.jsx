@@ -12,6 +12,7 @@ import { ScrollLogger } from "./components/ScrollLogger/ScrollLogger";
 import { StateCheckbox } from "./components/StateCheckbox/StateCheckbox";
 import { ToggleText } from "./components/ToggleText/ToggleText";
 import { Select } from "./components/Select/Select";
+import { EditableText } from "./components/EditableText/EditableText";
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 			<ScrollLogger />
 			<StateCheckbox />
 			<Select />
+			<EditableText />
 		</>
 	);
 }
