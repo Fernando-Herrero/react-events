@@ -17,6 +17,9 @@ import { NamesList } from "./components/NamesList/NamesList";
 import { ToDoList } from "./components/TodoList/TodoList";
 import { PersonalizedCounter } from "./components/PersonalizedCounter/PersonalizedCounter";
 import { PersonCard } from "./components/PersonCard/PersonCard";
+import { NoteForm } from "./components/NotesApp/NoteForm/NoteForm";
+import { useState } from "react";
+import { NoteList } from "./components/NotesApp/NoteList/NoteList";
 
 function App() {
 	const people = [
@@ -24,6 +27,12 @@ function App() {
 		{ id: 2, name: "Luis", age: 30, initialPoints: 5 },
 		{ id: 3, name: "Clara", age: 22, initialPoints: 3 },
 	];
+
+	const [notes, setNotes] = useState([]);
+
+	const addNote = (note) => {
+		setNotes([...notes, note]);
+	};
 
 	return (
 		<>
@@ -49,6 +58,8 @@ function App() {
 			{people.map((person) => (
 				<PersonCard key={person.id} name={person.name} age={person.age} initialPoints={person.initialPoints} />
 			))}
+			<NoteForm onAddNote={addNote} />
+			<NoteList notes={notes} />
 		</>
 	);
 }
