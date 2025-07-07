@@ -1,0 +1,51 @@
+.person-card {
+	background-color: #f0f8ff;
+	border: 2px solid #d0e0f0;
+	border-radius: 12px;
+	padding: 16px;
+	margin: 12px auto 0 auto;
+	width: 200px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-card h3 {
+	margin: 0;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.person-card p {
+	margin: 8px 0;
+	font-size: 1rem;
+	color: #555;
+}
+
+.person-card span {
+	display: block;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-bottom: 12px;
+	color: #0077cc;
+}
+
+.btns {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.btns button {
+	padding: 6px 12px;
+	font-size: 0.9rem;
+	border: none;
+	border-radius: 8px;
+	background-color: #0077cc;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.btns button:hover {
+	background-color: #005fa3;
+}

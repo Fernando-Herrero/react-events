@@ -14,8 +14,17 @@ import { ToggleText } from "./components/ToggleText/ToggleText";
 import { Select } from "./components/Select/Select";
 import { EditableText } from "./components/EditableText/EditableText";
 import { NamesList } from "./components/NamesList/NamesList";
+import { ToDoList } from "./components/TodoList/TodoList";
+import { PersonalizedCounter } from "./components/PersonalizedCounter/PersonalizedCounter";
+import { PersonCard } from "./components/PersonCard/PersonCard";
 
 function App() {
+	const people = [
+		{ id: 1, name: "Ana", age: 25, initialPoints: 0 },
+		{ id: 2, name: "Luis", age: 30, initialPoints: 5 },
+		{ id: 3, name: "Clara", age: 22, initialPoints: 3 },
+	];
+
 	return (
 		<>
 			<CountClicks />
@@ -33,6 +42,13 @@ function App() {
 			<Select />
 			<EditableText />
 			<NamesList />
+			<ToDoList list={"Tareas de domingo"} />
+			<PersonalizedCounter initialValue={0} />
+			<PersonalizedCounter initialValue={5} />
+			<PersonalizedCounter initialValue={2} />
+			{people.map((person) => (
+				<PersonCard key={person.id} name={person.name} age={person.age} initialPoints={person.initialPoints} />
+			))}
 		</>
 	);
 }

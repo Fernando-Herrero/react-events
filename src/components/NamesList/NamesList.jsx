@@ -35,7 +35,7 @@ export const NamesList = () => {
 	// 	</div>
 	// );
 
-	//TRYING TO DOING BETTER
+	//TRYING TO DO BETTER
 	const [greeting, setGreeting] = useState({});
 
 	const handleClick = (name) => {
