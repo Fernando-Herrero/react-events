@@ -10,5 +10,5 @@ export const HoverBox = () => {
 		event.target.classList.remove("hovered");
 	};
 
-	return <div className="box-color" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}></div>;
+	return <div className="box-color" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} />;
 };

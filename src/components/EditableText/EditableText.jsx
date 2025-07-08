@@ -5,7 +5,12 @@ export const EditableText = () => {
 	const [show, setShow] = useState(false);
 
 	const handleDoubleCLick = () => {
-		setShow(true);
+		setShow(() => {
+			return true;
+		});
+		setTimeout(() => {
+			document.getElementById("editable-input").focus();
+		}, 150);
 	};
 
 	const handleKeyDown = (event) => {

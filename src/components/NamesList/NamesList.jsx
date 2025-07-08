@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./NamesList.css";
+import { li } from "framer-motion/client";
 
 export const NamesList = () => {
 	// const [greeting, setGreeting] = useState("");
@@ -57,6 +58,14 @@ export const NamesList = () => {
 		}, 3000); //DE ESTA MANERA ES PARA CADA UNO
 	};
 
+	const names = [
+		{ key: "fer", display: "Fer" },
+		{ key: "alvaro", display: "Alvaro" },
+		{ key: "ana", display: "Ana" },
+		{ key: "maria", display: "Maria Trinidad" },
+		{ key: "fernando", display: "Fernando" },
+	];
+
 	const getGreeting = (name) => {
 		switch (name) {
 			case "fer":
@@ -77,36 +86,14 @@ export const NamesList = () => {
 	return (
 		<div className="names-list">
 			<ul>
-				<li>
-					<div>
-						Fer <button onClick={() => handleClick("fer")}>Greeting</button>
-					</div>
-					<p>{greeting["fer"]}</p>
-				</li>
-				<li>
-					<div>
-						Alvaro <button onClick={() => handleClick("alvaro")}>Greeting</button>
-					</div>
-					<p>{greeting["alvaro"]}</p>
-				</li>
-				<li>
-					<div>
-						Ana <button onClick={() => handleClick("ana")}>Greeting</button>
-					</div>
-					<p>{greeting["ana"]}</p>
-				</li>
-				<li>
-					<div>
-						Maria Trinidad <button onClick={() => handleClick("maria")}>Greeting</button>
-					</div>
-					<p>{greeting["maria"]}</p>
-				</li>
-				<li>
-					<div>
-						Fernando H. <button onClick={() => handleClick("fernando")}>Greeting</button>
-					</div>
-					<p>{greeting["fernando"]}</p>
-				</li>
+				{names.map(({ key, display }) => (
+					<li key={key}>
+						<div>
+							{display} <button onClick={() => handleClick(key)}>Greeting</button>
+						</div>
+						<p>{greeting[key]}</p>
+					</li>
+				))}
 			</ul>
 		</div>
 	);
